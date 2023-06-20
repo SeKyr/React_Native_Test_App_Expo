@@ -1,8 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from "@react-navigation/native";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import {AntDesign, Ionicons, MaterialIcons} from '@expo/vector-icons';
-import NInput from "./NInput";
+import {AntDesign, MaterialIcons} from '@expo/vector-icons';
 import UIView from "./UIView";
 import CalculationView from "./CalculationView";
 

@@ -1,7 +1,6 @@
 import NInput from "./NInput";
 import {useState} from "react";
-import {Text} from "react-native-web";
-import {View} from "react-native";
+import {Text, View} from "react-native";
 
 export default function CalculationView() {
     const fibonacciAlgorithm = (n) => {

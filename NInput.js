@@ -1,5 +1,4 @@
-import {TextInput, View} from "react-native-web";
-import {Button, StyleSheet} from 'react-native';
+import {Button, StyleSheet, TextInput, View} from 'react-native';
 
 import {useState} from "react";
 
