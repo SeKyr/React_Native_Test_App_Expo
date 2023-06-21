@@ -7,7 +7,7 @@ export default function CalculationView() {
         const startTime = performance.now();
         fib(n);
         const endTime = performance.now();
-        return elapsedMicroseconds(startTime, endTime);
+        return elapsedMilliseconds(startTime, endTime);
     }
 
     const fib =  (n) => {
@@ -32,7 +32,7 @@ export default function CalculationView() {
             }
         }
         const endTime = performance.now();
-        return elapsedMicroseconds(startTime, endTime);
+        return elapsedMilliseconds(startTime, endTime);
     }
 
 
@@ -43,7 +43,7 @@ export default function CalculationView() {
             insert(element);
         }
         const endTime = performance.now();
-        return elapsedMicroseconds(startTime, endTime);
+        return elapsedMilliseconds(startTime, endTime);
     }
 
     let root;
@@ -83,7 +83,7 @@ export default function CalculationView() {
         const startTime = performance.now();
         reverse(data);
         const endTime = performance.now();
-        return elapsedMicroseconds(startTime, endTime);
+        return elapsedMilliseconds(startTime, endTime);
     }
 
     const reverse = (toReverse) => {
@@ -122,7 +122,7 @@ function CalculationWidget({name, algorithmImplementation}) {
     )
 }
 
-function elapsedMicroseconds(startTime, endTime) {
+function elapsedMilliseconds(startTime, endTime) {
     const executionTime = endTime - startTime;
     return Math.floor(executionTime);
 }
