@@ -116,7 +116,7 @@ function CalculationWidget({name, algorithmImplementation}) {
             <Text style={{width:50}}>{name}:</Text>
             <NInput onStart={onStart}></NInput>
             <View style={{width:100}}>
-                {executionTime != null && <Text >{executionTime}μs; n = {n}</Text>}
+                {executionTime != null && <Text >{executionTime}ms; n = {n}</Text>}
             </View>
         </View>
     )
@@ -124,6 +124,6 @@ function CalculationWidget({name, algorithmImplementation}) {
 
 function elapsedMicroseconds(startTime, endTime) {
     const executionTime = endTime - startTime;
-    return executionTime * 1000;
+    return Math.floor(executionTime);
 }
 
