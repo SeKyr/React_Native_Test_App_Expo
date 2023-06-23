@@ -1,4 +1,4 @@
-import {Button, StyleSheet, TextInput, View} from 'react-native';
+import {Button, Keyboard, StyleSheet, TextInput, View} from 'react-native';
 
 import {useState} from "react";
 
@@ -19,7 +19,11 @@ export default function NInput({onStart}) {
             <View>
                 <Button
                     title="Start"
-                    onPress={() => onStart(parseInt(n))}
+                    onPress={() => {
+                        Keyboard.dismiss()
+                        onStart(parseInt(n))
+                    }
+                }
                 />
             </View>
         </View>
