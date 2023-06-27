@@ -7,7 +7,7 @@ npm install
 ### Compile and Minify for Production
 
 ```sh
-npm run build
+npx expo export:web
 ```
 
 ### Run production build locally
