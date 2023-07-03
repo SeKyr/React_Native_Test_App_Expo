@@ -38,7 +38,7 @@ export default function CalculationView() {
 
     const binarySearchTreeAlgorithm = (n) => {
         const data = Array.from(Array(n), (v,i) => Math.floor((Math.sin(i)-Math.sin(i+1)) * 1000));
-        this.root = null;
+        root = null;
         const startTime = performance.now();
         for (let element of data) {
             insert(element);
